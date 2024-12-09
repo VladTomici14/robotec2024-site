@@ -19,6 +19,9 @@ body {
     margin: 0;
 }
 
+p {
+    font-size: 18px;
+}
 
 hr {
     /*color: var(--bitter-lemon);*/
@@ -30,26 +33,16 @@ hr {
     padding: 0;
 }
 
-
-/*#content {*/
-/*    !*margin-bottom: 400px;*!*/
-/*    margin-top: 30px;*/
-/*}*/
-
-
-
-
-
+#content {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
 
 .main {
     padding: 16px;
     margin-top: 30px;
     height: 1500px; /* Used in this example to enable scrolling */
 }
-
-
-
-
 
 
 
@@ -126,13 +119,14 @@ hr {
     flex: 1;
     padding: 20px;
     text-align: left;
+    margin-bottom: 50px;
 }
 
 .section-header-text h1 {
     flex: 1;
     width: 100%;
-    font-size: 38px;
-    text-transform: uppercase;
+    font-size: 48px;
+    /*text-transform: uppercase;*/
 }
 
 
@@ -158,12 +152,26 @@ hr {
 }
 
 #section-header-text-intro {
-    margin-bottom: 200px;
+    margin-bottom: 300px;
+
+}
+
+#section-header-intro p {
+    font-size: 24px;
 }
 
 #section-header-text-intro h1 {
     width: 100%;
-    font-size: 68px;
+    font-size: 58px;
+    margin: 0;
+    padding: 0;
+}
+
+#section-header-text-intro p {
+    /*width: 100%;*/
+    /*font-size: 58px;*/
+    padding-top: -50px;
+    padding-right: 100px;
 }
 
 /*===== ABOUT =====*/
@@ -174,7 +182,7 @@ hr {
 }
 
 #about-section-logos {
-    max-width: 600px;
+    max-width: 800px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -210,14 +218,14 @@ hr {
     border: 4px solid var(--light-yellow);
 }
 
-.track-grid-item h1 {
-    font-size: 28px;
-}
-
 .track-grid-item {
     justify-content: space-between;
     margin: auto;
     text-align: center;
+}
+
+.track-grid-item h1 {
+    font-size: 34px;
 }
 
 .track-grid-item img {
@@ -313,6 +321,10 @@ footer {
     color: var(--text-gray);
     margin-right: 10px;
     height: 30px;
+}
+
+.related-links {
+    margin-bottom: auto;
 }
 
 .related-links ul {
