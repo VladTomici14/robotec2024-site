@@ -5,7 +5,7 @@
     --bitter-lemon: #C2EF13;
     --apple-green: #7FBA07;
     --chinease-black: #171717;
-    --background-black: #131313;
+    --background-black: #000000;
     --text-gray: #9DA18E;
 
     --darker-grotesque-extra-bold: 'Darker Grotesque';
@@ -18,13 +18,28 @@ body {
     font-family: var(--darker-grotesque-extra-bold);
 }
 
+hr {
+    /*color: var(--bitter-lemon);*/
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid var(--bitter-lemon);
+    margin: 1em 0;
+    padding: 0;
+}
 
+
+content {
+    margin-bottom: 400px;
+}
 
 /*===== HEADER =====*/
 #header {
     overflow: hidden;
+    /*position: fixed;*/
     background-color: var(--bitter-lemon);
     padding: 20px 10px;
+    overflow: hidden;
 }
 
 #header a {
@@ -36,11 +51,24 @@ body {
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
+
 }
 
 #logo {
     height: 40px;
     margin-left: 60px;
+}
+
+#navigation-bar {
+    overflow: hidden;
+    box-shadow: inset 0 0 20px green;
+}
+
+#sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: yellow;
 }
 
 .header-right a:hover {
@@ -58,6 +86,59 @@ body {
 
 .header-right {
     float: right;
+    /*padding: 20px 0;*/
+    vertical-align: middle;
+    display: inline-block;
+
+}
+
+
+
+/*===== SECTION CONSTRUCTORS =====*/
+.section-header {
+    background-color: var(--chinease-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header-image img {
+    max-width: 600px;
+    height: auto;
+}
+
+/*#section-header-img {*/
+/*    display: flex;*/
+/*    padding: 20px;*/
+/*}*/
+
+.section-header-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.section-header-text h1 {
+    flex: 1;
+    width: 100%;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+
+
+/*===== ABOUT =====*/
+#about {
+    color: var(--light-yellow);
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#about-section-logos {
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -65,45 +146,15 @@ body {
 /*===== TRACKS =====*/
 #tracks {
     color: var(--light-yellow);
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-#tracks-header {
-    background-color: var(--chinease-black);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#tracks-header-image img {
-    max-width: 600px;
-    height: auto;
-}
-
-#tracks-header-img {
-    display: flex;
-    padding: 20px;
-}
-
-#tracks-header-text {
-    flex: 1;
-    padding: 20px;
-    text-align: left;
-}
-
-#tracks-header-text h1 {
-    flex: 1;
-    width: 100%;
-    font-size: 38px;
-    text-transform: uppercase;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 #tracks-grid {
     display: grid;
     background-color: var(--chinease-black);
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 40px;
     padding: 30px;
     margin-left: 100px;
     margin-right: 100px;
@@ -143,20 +194,20 @@ body {
 
 
 /*===== PARTNERS =====*/
-.partners {
+#partners {
     padding: 50px;
     background-color: var(--chinease-black);
     color: var(--light-yellow);
     text-align: left;
 }
 
-.partners h1 {
+#partners h1 {
     font-size: 38px;
     margin-left: 20px;
     text-transform: uppercase;
 }
 
-.partners h2 {
+#partners h2 {
     font-size: 28px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -189,7 +240,7 @@ footer {
 }
 
 .footer-content {
-    background-color: var(--chinease-black);
+    background-color: var(--background-black);
     color: var(--light-yellow);
     padding: 20px;
     margin-left: 60px;
@@ -197,7 +248,7 @@ footer {
 }
 
 .footer-columns {
-    background-color: var(--chinease-black);
+    background-color: var(--background-black);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -235,7 +286,7 @@ footer {
 }
 
 .related-links a:link {
-    color: green;
+    color: var(--text-gray);
     background-color: transparent;
     text-decoration: none;
 }

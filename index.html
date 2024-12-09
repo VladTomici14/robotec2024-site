@@ -5,6 +5,19 @@
 
         <link href="style.css" rel="stylesheet" type="text/css">
 
+        <script>
+            let nav = document.getElementById("header");
+            let sticky = nav.offsetTop;
+            window.onscroll = function() {sticker()};
+            function sticker() {
+                if (window.pageYOffset >= sticky) {
+                    nav.classList.add("sticky")
+                } else {
+                    nav.classList.remove("sticky");
+                }
+            }
+        </script>
+
     </head>
     <body>
 
@@ -23,22 +36,46 @@
             </div>
         </div>
 
+
+        <h1>muma ta</h1>
+
+
+        <hr style = "width: 75%; margin-left: auto; margin-right: auto;"/>
+
+        <!-------- ABOUT --------->
         <div id="content">
-            <section id="general-information">
+            <section id="about">
+
+                <div class="section-header">
+
+                    <div class="section-header-text">
+                        <h1>RoboTEC</h1>
+                        <p>Velox ipsum dolor sit amet, perferendis delectus tenetur fuga. Incidunt magnam labore perspiciatis, illum obcaecati modi expedita tempora. Quibusdam fugiat cupiditate ullam, aut eveniet! Soluta vitae aliquam delectus, ex repellendus architecto ad quas hic?</p>
+                    </div>
+
+                    <div class="section-header-image">
+                        <img src="assets/robo-wave.svg">
+                    </div>
+
+                </div>
+
+                <img src="assets/AboutSectionLogos.svg" id="about-section-logos">
 
             </section>
+
+            <hr style="width: 75%; margin-left: auto; margin-right: auto; margin-top: 100px; margin-bottom: 100px;"/>
 
             <!-------- TRACKS --------->
             <section id="tracks">
 
                 <div id="tracks-container">
-                    <div id="tracks-header">
+                    <div class="section-header">
 
-                        <div id="tracks-header-image">
+                        <div class="section-header-image">
                             <img src="assets/tracks/maze-solver.svg">
                         </div>
 
-                        <div id="tracks-header-text">
+                        <div class="section-header-text">
                             <h1>Tracks</h1>
                             <p>Lörem ipsum makrogt multikoling tesk önynera, benybelt. Möpät egenanställningsföretag rugt dosamma tresm. Onde prening för att möheten sorar. Ongar ar. Nenar autorunt previns ponäde. Press sunade. Käl heterosam. Rör fang ikoment då post anaten. Lörem ipsum makrogt multikoling tesk önynera, benybelt. Möpät egenanställningsföretag rugt dosamma tresm. Onde prening för att möheten sorar.</p>
                         </div>
@@ -87,7 +124,7 @@
             </section>
 
             <!-------- PARTNERS --------->
-            <section class="partners">
+            <section id="partners">
                 <h1>Partners</h1>
                 <div class="grid-container">
                     <div class="grid-item">
@@ -121,7 +158,7 @@
             </section>
 
             <!-------- FOOTER --------->
-            <footer>
+            <footer id="cont">
                 <div class="footer-content">
 
                     <div class="footer-columns">
