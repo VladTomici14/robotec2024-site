@@ -5,45 +5,71 @@
 
         <link href="style.css" rel="stylesheet" type="text/css">
 
-        <script>
-            let nav = document.getElementById("header");
-            let sticky = nav.offsetTop;
-            window.onscroll = function() {sticker()};
-            function sticker() {
-                if (window.pageYOffset >= sticky) {
-                    nav.classList.add("sticky")
-                } else {
-                    nav.classList.remove("sticky");
-                }
-            }
-        </script>
-
     </head>
     <body>
 
 
-        <div id="header">
+<!--        <div class="header" id="myHeader">-->
+<!--        <div id="navbar">-->
 
-            <a href="#default"><img id="logo" src="assets/text-logo-black.svg"></a>
+<!--            <a href="#default"><img id="logo" src="assets/text-logo-black.svg"></a>-->
 
-            <div class="header-right">
-                <a class="default" href="#home">ACASA</a>
-                <a href="#tracks">PROBE</a>
-                <a href="#partners">PARTENERI</a>
-                <a href="#contact">CONTACT</a>
-                <a href="#faq">FAQ</a>
-<!--                <a href="#cont">CONT</a>-->
+<!--            <div id="header-right">-->
+<!--                <a class="default" href="#home">ACASA</a>-->
+<!--                <a href="#tracks">PROBE</a>-->
+<!--&lt;!&ndash;                <a href="#partners">PARTENERI</a>&ndash;&gt;-->
+<!--                <a href="#contact">CONTACT</a>-->
+<!--                <a href="#faq">FAQ</a>-->
+<!--&lt;!&ndash;                <a href="#cont">CONT</a>&ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+        <div id="navbar">
+            <div id="navbar-left">
+<!--                <img src="logo.png" alt="Logo" class="navbar-logo">-->
+                <a href="#default"><img id="logo" src="assets/text-logo-black.svg" ></a>
+
+            </div>
+            <div id="navbar-right">
+
+                <a class="nav-button" href="#default">ACASA</a>
+                <a class="nav-button" href="#tracks">PROBE</a>
+                <a class="nav-button" href="#footer">CONTACT</a>
+                <a class="nav-button" href="#faq">FAQ</a>
+
             </div>
         </div>
 
 
-        <h1>muma ta</h1>
 
-
-        <hr style = "width: 75%; margin-left: auto; margin-right: auto;"/>
-
-        <!-------- ABOUT --------->
         <div id="content">
+
+            <!-------- INTRO --------->
+
+            <section id="intro">
+
+                <div id="section-header-intro">
+
+                    <div class="section-header-image">
+                        <img src="assets/tracks/lf-clasic.svg">
+                    </div>
+
+                    <div id="section-header-text-intro">
+                        <h1>Embedded solutions, limitless possibilities</h1>
+                        <p>Velox ipsum dolor sit amet, perferendis delectus tenetur fuga. Incidunt magnam labore perspiciatis, illum obcaecati modi expedita tempora. Quibusdam fugiat cupiditate ullam, aut eveniet! Soluta vitae aliquam delectus, ex repellendus architecto ad quas hic?</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <hr style = "width: 75%; margin-left: auto; margin-right: auto;"/>
+
+
+            <!-------- ABOUT --------->
             <section id="about">
 
                 <div class="section-header">
@@ -112,11 +138,10 @@
                         </div>
 
                     </div>
-
                 </div>
 
-
             </section>
+
 
             <!-------- PRIZES --------->
             <section id="prizes">
@@ -124,38 +149,38 @@
             </section>
 
             <!-------- PARTNERS --------->
-            <section id="partners">
-                <h1>Partners</h1>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <img src="assets/partners/partner-logo.jpeg">
-                    </div>
-                    <div class="grid-item">
-                        <img src="assets/partners/partner-logo.jpeg">
-                    </div>
-                    <div class="grid-item">
-                        <img src="assets/partners/partner-logo.jpeg">
-                    </div>
-                    <div class="grid-item">
-                        <img src="assets/partners/partner-logo.jpeg">
-                    </div>
-                    <div class="grid-item">
-                        <img src="assets/partners/partner-logo.jpeg">
-                    </div>
-                    <div class="grid-item">
-                        <img src="assets/partners/partner-logo.jpeg">
-                    </div>
-                    <div class="grid-item">
-                        <img src="assets/partners/partner-logo.jpeg">
-                    </div>
-                    <div class="grid-item">
-                        <img src="assets/partners/partner-logo.jpeg">
-                    </div>
-                    <div class="grid-item">
-                        <img src="assets/partners/partner-logo.jpeg">
-                    </div>
-                </div>
-            </section>
+<!--            <section id="partners">-->
+<!--                <h1>Partners</h1>-->
+<!--                <div class="grid-container">-->
+<!--                    <div class="grid-item">-->
+<!--                        <img src="assets/partners/partner-logo.jpeg">-->
+<!--                    </div>-->
+<!--                    <div class="grid-item">-->
+<!--                        <img src="assets/partners/partner-logo.jpeg">-->
+<!--                    </div>-->
+<!--                    <div class="grid-item">-->
+<!--                        <img src="assets/partners/partner-logo.jpeg">-->
+<!--                    </div>-->
+<!--                    <div class="grid-item">-->
+<!--                        <img src="assets/partners/partner-logo.jpeg">-->
+<!--                    </div>-->
+<!--                    <div class="grid-item">-->
+<!--                        <img src="assets/partners/partner-logo.jpeg">-->
+<!--                    </div>-->
+<!--                    <div class="grid-item">-->
+<!--                        <img src="assets/partners/partner-logo.jpeg">-->
+<!--                    </div>-->
+<!--                    <div class="grid-item">-->
+<!--                        <img src="assets/partners/partner-logo.jpeg">-->
+<!--                    </div>-->
+<!--                    <div class="grid-item">-->
+<!--                        <img src="assets/partners/partner-logo.jpeg">-->
+<!--                    </div>-->
+<!--                    <div class="grid-item">-->
+<!--                        <img src="assets/partners/partner-logo.jpeg">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
 
             <!-------- FOOTER --------->
             <footer id="cont">
@@ -165,9 +190,9 @@
                         <div class="contact">
                             <h1>Contact</h1>
 
-                            <p>Coordonator: Marius Florian IVAN-FERNOLENDT</p>
-                            <!-- TODO: add the functionality of emailing directly -->
-                            <p>Email: robotec@ligac.ro</p>
+                            <p><i class="fa fa-user"></i> Coordonator: Andrei IONESCU </p>
+                            <p><i class="fa fa-phone"></i> Telefon coordonator: +40 750 417 419</p>
+                            <p><i class="fa fa-envelope"></i> Email: robotec@ligaac.ro</p>
                         </div>
 
                         <div class="related-links">
